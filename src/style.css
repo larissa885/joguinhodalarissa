@@ -61,3 +61,10 @@ body .overlay .primary{margin-top:7px;padding:11px 17px;background:#dfca91;color
 .character-picker{margin-top:17px}.character-picker>.label{color:#e0c88d}.character-card{background:rgba(14,20,14,.82);border-color:rgba(230,216,180,.28)}.character-card.selected{background:rgba(73,82,44,.78);border-color:#e0ca8d;box-shadow:inset 0 0 0 1px #d7c27c55}.character-card em{color:#eee6d5}
 .primary{background:linear-gradient(135deg,#e6d3a3,#b6a267);color:#211b10;box-shadow:0 5px 18px #0007}.primary:hover{background:#f4e4b9}.controls{color:#f4ecd9;text-shadow:0 1px 6px #000}.controls small{color:#c0b9a7}
 @media(max-width:650px){.title-card{width:calc(100vw - 24px);padding:22px 18px;margin:auto}.title-card h1{font-size:clamp(48px,13vw,68px);margin:14px 0}.character-picker{margin-top:12px}.character-card{min-height:76px}.controls{margin-top:17px}}
+
+/* Acabamento visual da floresta */
+#game canvas{filter:saturate(1.12) contrast(1.045) brightness(1.025)}
+.character-card{backdrop-filter:blur(8px);box-shadow:0 8px 26px #0005}
+.character-card:hover{box-shadow:0 12px 30px #0008,0 0 18px #d2dfad25}
+.character-card.selected{box-shadow:inset 0 0 0 1px #d7c27c55,0 0 22px #d4c78322}
+@media(prefers-reduced-motion:reduce){.character-card,.primary,.icon-btn,.close{transition:none}}
